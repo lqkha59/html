@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>JavaJam Coffee House</title>
+		<meta charset="utf-8">
+		<style>
+			#wrapper {height: 500px;
+						width: 1000px;}
+			#logo {height: 20%;}
+			#leftcolumn {float: left;
+							width: 15%;
+							height: 75%;
+							background-color: #ff0000;}
+			#leftcolumn ul { list-style: none;
+							text-align: center;}
+			#leftcolumn a {text-decoration: none;}				
+			#rightcolumn {float:right;
+							height: 75%;
+							width: 85%;
+							background-color: #c50000;}
+			h1, p {padding-left: 20px;}
+			form {padding-left: 20px;}
+			label { float: left;
+					width: 10%;
+					text-align: right;}
+			input, textarea {margin-left: 30px;}
+			footer { width: 100%;heigh:5%;
+					text-align: center;
+					background-color: #ffcc99;}
+		</style>	
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="logo"
+				<header>
+					<img src="header.png" alt="JavaJam Coffee House" width=100% height=100%>
+				</header>
+			</div>
+			<div id="leftcolumn">
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="menu.html">Menu</a></li>
+						<li><a href="music.html">Music</a></li>
+						<li><a href="jobs.html">Jobs</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div id="rightcolumn">
+				<h1>Jobs at JavaJam</h1>
+				<p>Want to work at JavaJam? Fill out the form below to start your application. Required fields are marked with an asterisk *</p>
+				<form action="get.php" method="get">
+					<label for="name">*Name:</label>
+					<input type="text" name="name" required><br><br>
+					<label for="email">*Email:</label>
+					<input type="email" name="email" id="email" required><br><br>
+					<label for="startdate">Start Date:</label>
+					<input type="date" name="startdate" id="startdate"><br><br>
+					<label for="experience">*Experience:</label>
+					<textarea name="experience" id="experience" rows="4" cols="50" required></textarea><br><br>
+					<input type="submit" value="Apply Now">
+				</form>	
+			</div>
+			<footer>
+				<small>
+					<em>Copyright &copy; JavaJam Coffee House
+					<br><a href="mailto:quynhkha@luong.com">quynhkha@luong.com</em></a>
+				</small>
+			</footer>
+		</div>
+	</body>
+</html>
