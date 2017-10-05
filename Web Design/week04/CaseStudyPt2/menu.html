@@ -19,16 +19,17 @@
 							width: 85%;
 							background-color: #c50000;}
 			h1 {padding-left: 20px;}
-			table {padding-left: 40px;
-					padding-right: 60px;
-					width= 100%;}
+			table, {padding-left: 50px;
+					padding-right: 70px;
+					width= 80%;}
 			tr:nth-of-type(odd) {background-color: #ffcc99;}
 			#firstcollumn {text-align: center;
 							font-weight:bold;}
+			#totalbutton {margin-left: 70px;}
 			footer { width: 100%;heigh:5%;
 					text-align: center;
 					background-color: #ffcc99;}
-		</style>	
+		</style>
 	</head>
 	<body>
 		<div id="wrapper">
@@ -50,23 +51,45 @@
 			<div id="rightcolumn">
 				<h1>Coffee at JavaJam</h1>
 				<table border="0">
-					 <colgroup>
+					 <!--<colgroup>
 					   <col style="width: 10%;">
-					   <col style="width: 80%;">
-					</colgroup>
+					   <col style="width: 50%;">
+					   <col style="width: 10%;">
+					   <col style="width: 10%;">
+					   <col style="width: 10%;">
+					</colgroup>-->
+					<tr><th>Type</th>
+						<th>Description & Price per unit</th>
+						<th>Single</th>
+						<th>Double</th>
+						<th>Subtotal</th>
+					</tr>
+					
 					<tr><td id="firstcollumn">Just Java</td>
 						<td>Regular house blend, decaffeinated coffee, or flavor of the day.
-						<br>Endless Cup $2.00</td>
+							<br>Endless Cup $2.00</td>
+						<td colspan="2"><input type="text" name="javaquan" id="javaquan" size="16"></td>
+						<td><input type="text" name="javasubtotal" id="javasubtotal" size="5"></td>
 					</tr>
 					<tr><td id="firstcollumn">Cafe au Lait</td>
 						<td>House blended coffee infused into a smooth, steamed milk.
-						<br>Single $2.00 Double $3.00</td>
+							<br>Single $2.00 Double $3.00</td>
+						<td><input type="text" name="cafesingle" id="cafesingle" size="5"></td>
+						<td><input type="text" name="cafedouble" id="cafedouble" size="5"></td>
+						<td><input type="text" name="cafesubtotal" id="cafesubtotal" size="5"></td>
 					</tr>
 					<tr><td id="firstcollumn">Iced Cappuccino</td>
 						<td>Sweetened espresso blended with icy-cold milk and served in a chilled glass.
-						<br>Single $4.75 Double $5.75</td>
+							<br>Single $4.75 Double $5.75</td>
+						<td><input type="text" name="cappusingle" id="cappusingle" size="5"></td>
+						<td><input type="text" name="cappudouble" id="cappudouble" size="5"></td>
+						<td><input type="text" name="cappusubtotal" id="cappusubtotal" size="5"></td>
 					</tr>
 				</table>
+				<p>
+					<input type="button" value="Total" id="totalbutton">
+					<input type="text" name="totalcost" id="totalcost">
+				</p>
 			</div>
 			<footer>
 				<small>
@@ -75,5 +98,7 @@
 				</small>
 			</footer>
 		</div>
+		<script type = "text/javascript"  src ="cost.js"></script>
+		<script type = "text/javascript"  src ="cost_r.js"></script>
 	</body>
 </html>

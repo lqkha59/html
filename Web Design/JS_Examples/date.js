@@ -24,7 +24,7 @@ alert("Start date.js");
       document.write(
         "Date: " + dateString + "<br />",
         "Day: " + day + "<br />",
-        "Month: " + month + "<br />",
+        "Month: " + (month+1) + "<br />",
         "Year: " + year + "<br />",
         "Time in milliseconds: " + timeMilliseconds + "<br />",
         "Hour: " + hour + "<br />",
@@ -32,7 +32,7 @@ alert("Start date.js");
         "Second: " + second + "<br />",
         "Millisecond: " + millisecond + "<br />");
 
-// Time a loop
+// Time a loop?
 
       var dum1 = 1.00149265, product = 1;
       var start = new Date();

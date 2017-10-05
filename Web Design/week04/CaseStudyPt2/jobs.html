@@ -27,7 +27,8 @@
 			footer { width: 100%;heigh:5%;
 					text-align: center;
 					background-color: #ffcc99;}
-		</style>	
+		</style>
+		
 	</head>
 	<body>
 		<div id="wrapper">
@@ -50,16 +51,21 @@
 				<h1>Jobs at JavaJam</h1>
 				<p>Want to work at JavaJam? Fill out the form below to start your application. Required fields are marked with an asterisk *</p>
 				<form action="get.php" method="get">
-					<label for="name">*Name:</label>
-					<input type="text" name="name" required><br><br>
+					<label for="fullname">*Name:</label>
+					<input type="text" name="fullname" id="fullname" required><br><br>
+					
 					<label for="email">*Email:</label>
 					<input type="email" name="email" id="email" required><br><br>
+					
 					<label for="startdate">Start Date:</label>
 					<input type="date" name="startdate" id="startdate"><br><br>
+					
 					<label for="experience">*Experience:</label>
 					<textarea name="experience" id="experience" rows="4" cols="50" required></textarea><br><br>
+					
 					<input type="submit" value="Apply Now">
-				</form>	
+				</form>
+				
 			</div>
 			<footer>
 				<small>
@@ -67,6 +73,9 @@
 					<br><a href="mailto:quynhkha@luong.com">quynhkha@luong.com</em></a>
 				</small>
 			</footer>
+			
 		</div>
+		<script type = "text/javascript"  src ="validate.js"></script>
+		<script type="text/javascript" src="validate_r.js"></script>
 	</body>
 </html>

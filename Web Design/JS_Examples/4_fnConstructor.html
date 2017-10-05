@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html>
-<body>
+	<body>
 
-<script>
+		<script>
+			//constructor
+			function plane(newMake, newModel, newYear){
+			   this.make = newMake;
+			   this.model = newModel;
+			   this.year = newYear;
+			   this.display = function display()  {
+				document.write("Make: ", this.make, "<br>");
+				document.write("Model: ", this.model, "<br>");   
+				document.write("Year: ", this.year, "<br>");  	
+			}
+			}
+			//initial object = create properties
+			myplane = new plane("cessna", "centurian", "1970");
+			//other methods
+			/*function displayPlane()  {
+				document.write("Make: ", this.make, "<br>");
+				document.write("Model: ", this.model, "<br>");   
+				document.write("Year: ", this.year, "<br>");  	
+			}*/
+			//add method to object by assigning to the constructor????
+			//myplane.display = displayPlane; //display???? --> displayPlan of myplane? (myplan has display as an event, when this event runs, it call displayPlan?)
+			myplane.display(); //display of myplan runs
+			//methods only runs as listener when its event 
+			console.log(myplane.model);
+		</script>
 
-function plane(newMake, newModel, newYear){
-   this.make = newMake;
-   this.model = newModel;
-   this.year = newYear;
-}
-
-myplane = new plane("cessna", "centurian", "1970");
-
-function displayPlane()  {
-    document.write("Make: ", this.make, "<br>");
-    document.write("Model: ", this.model, "<br>");   
-    document.write("Year: ", this.year, "<br>");  	
-}
-
-myplane.display = displayPlane;
-myplane.display();
-
-</script>
-
-</body>
+	</body>
 </html>
